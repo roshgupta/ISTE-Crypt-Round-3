@@ -1,4 +1,3 @@
-console.log("Script loaded");
 // grabbing all input fields
 const userName = document.getElementById("name");
 const userNameLabel = document.querySelector(`.form-container label[for="name"]`)
@@ -78,7 +77,6 @@ genre.addEventListener("blur", (e) => {
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log(`name ${validName} email ${validEmail} number ${validNumber} genre ${validGenre}`)
   if (validName && validEmail && validNumber && validGenre) {
     errorBlock.innerText = "Form submitted successfully";
     errorBlock.classList.add("success");
