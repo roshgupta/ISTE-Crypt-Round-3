@@ -17,7 +17,7 @@
 
     <section class="form">
       <div class="wrapper">
-        <form action="#" class="form-container">
+        <form action="#" class="form-container" method="post">
           <h2>Tell us about yourself</h2>
           <label for="name">Name</label>
           <input type="text" name="name" id="name" placeholder="Enter your name" required>
@@ -29,17 +29,19 @@
           <input type="number" name="contact-number" id="contact-number" required>
           <label for="genre">Genre of music you like</label>
           <input type="text" name="genre" id="genre" placeholder="Enter genre here">
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" id="submit">
         </form>
+        <div id="error-block"></div>
       </div>
     </section>
     <section class="image">
-      <img src="../image.jpg" alt="Image">
+      <img src="./image-min.jpg" alt="Image">
     </section>
   </main>
   <footer>
     footer
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
