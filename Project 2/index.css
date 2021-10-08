@@ -51,16 +51,15 @@ main section {
 
 @media screen and (max-width: 59.375em) {
   main .image {
-    display: none;
-    /*
-      grid-row: 1/2;
-      height: 400px;
-      overflow: hidden;
-      z-index: -20;
-      img {
-        min-height: unset;
-      }
-      */
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    height: 400px;
+    overflow: hidden;
+    z-index: -20;
+  }
+  main .image img {
+    min-height: unset;
   }
 }
 
