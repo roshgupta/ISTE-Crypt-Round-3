@@ -5,66 +5,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
-    html {
-      font-size: 100%;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Roboto", sans-serif;
-      min-height: 100vh;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    main {
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .content {
-      font-size: 24px;
-      color: rgb(39, 39, 39);
-      margin: 32px 0px;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-      padding: 12px 20px;
-      font-size: 20px;
-      background-color: rgb(96, 125, 250);
-      border-radius: 4px;
-      margin: 16px;
-    }
-  </style>
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <title>ISTE Crypt Round 3</title>
+  <link rel="stylesheet" href="index.css">
+  <title>ISTE Crypt</title>
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
 </head>
 
 <body>
+  <header>
+    <nav>ISTE Crypt</nav>
+  </header>
   <main>
-    <div class="content">
-      ISTE Crypt Round 3 | Roshan Gupta
-    </div>
-    <a href="./Project 1/index.html">View Project 1</a>
-    <a href="./Project 2/index.html">View Project 2</a>
+
+    <section class="form">
+      <div class="wrapper">
+        <form action="#" class="form-container" method="post">
+          <h2>Tell us about yourself</h2>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          <label for="date-of-birth">Date of birth</label>
+          <input type="date" name="date-of-birth" id="date-of-birth" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+          <label for="contact-number">Contact Number</label>
+          <input type="number" name="contact-number" id="contact-number" required>
+          <label for="genre">Genre of music you like</label>
+          <input type="text" name="genre" id="genre" placeholder="Enter genre here">
+          <input type="submit" value="Submit" id="submit">
+        </form>
+        <div id="error-block"></div>
+      </div>
+    </section>
+    <section class="image">
+      <img src="./image-min.jpg" alt="Image">
+    </section>
   </main>
+  <footer>
+    <div class="random">
+      Contact me: <a href="mailto:roshangupta.201ec156@nitk.edu.in">
+        roshangupta.201ec156@nitk.edu.in</a>.
+    </div>
+    <div class="copy">
+      ISTE Crypt &copy; - 2021 | Roshan Gupta
+    </div>
+    <a href="https://github.com/roshgupta">View on GitHub</a>
+  </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
