@@ -136,14 +136,22 @@ main .image img {
 .form-container input[type="submit"] {
   color: white;
   background: #22011e;
-  background: -webkit-gradient(linear, left top, right top, from(#010722), color-stop(50%, #00026a), to(#010a22));
-  background: linear-gradient(90deg, #010722 0%, #00026a 50%, #010a22 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#011366), color-stop(50%, #020596), to(#031546));
+  background: linear-gradient(90deg, #011366 0%, #020596 50%, #031546 100%);
   outline: none;
   border: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  outline: #030120;
   padding: 0.5rem 0.75rem;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.form-container input[type="submit"]:focus {
+  border: 2px solid black;
+  margin: 0px;
 }
 
 #contact-number {

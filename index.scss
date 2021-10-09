@@ -101,14 +101,21 @@ main {
     background: rgb(34, 1, 30);
     background: linear-gradient(
       90deg,
-      rgb(1, 7, 34) 0%,
-      rgb(0, 2, 106) 50%,
-      rgb(1, 10, 34) 100%
+      rgb(1, 19, 102) 0%,
+      rgb(2, 5, 150) 50%,
+      rgb(3, 21, 70) 100%
     );
     outline: none;
     border: none;
     width: fit-content;
+    outline: #030120;
     padding: 0.5rem 0.75rem; //8px 12px;
+    margin: 2px;
+    cursor: pointer;
+    &:focus{
+      border: 2px solid black;
+      margin: 0px;
+    }
   }
 }
 
